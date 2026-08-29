@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E365AA1-1DDB-4B10-8BDA-2183E4C3D987}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="DissonanceVoip">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\DissonanceVoip.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Win64">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Mirror.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Components">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Mirror.Components.dll</HintPath>
+    </Reference>
+    <Reference Include="Mirror.Transports">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Mirror.Transports.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintCore">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\PaintCore.dll</HintPath>
+    </Reference>
+    <Reference Include="PaintIn3D">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\PaintIn3D.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net.Core">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\protobuf-net.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleFileBrowser.Runtime">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\SimpleFileBrowser.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Localization">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Games\Gladio.Mori.v0.16.5\game\Gladio Mori_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMoveCommand.cs" />
+    <Compile Include="AddStanceCommand.cs" />
+    <Compile Include="AddTorque.cs" />
+    <Compile Include="AiAnimation.cs" />
+    <Compile Include="AiBlockDirection.cs" />
+    <Compile Include="AiManager.cs" />
+    <Compile Include="AIPath.cs" />
+    <Compile Include="AllowCustomTextureOptionsType.cs" />
+    <Compile Include="AllowedEquipmentSelectSettingItem.cs" />
+    <Compile Include="AllowedMovesetTypes.cs" />
+    <Compile Include="AlternativeMaterials.cs" />
+    <Compile Include="AlternativeMaterialsPlayer.cs" />
+    <Compile Include="Armour.cs" />
+    <Compile Include="AttackAnimationDirection.cs" />
+    <Compile Include="AttackDirection.cs" />
+    <Compile Include="AutoRestart.cs" />
+    <Compile Include="AutoSize.cs" />
+    <Compile Include="BackToMainMenuManager.cs" />
+    <Compile Include="BackToSceneManager.cs" />
+    <Compile Include="BallMovement.cs" />
+    <Compile Include="BanListItemRow.cs" />
+    <Compile Include="BasicBackground.cs" />
+    <Compile Include="BasicBackgroundMainMenu.cs" />
+    <Compile Include="BasicBackgroundMenu.cs" />
+    <Compile Include="BasicButton.cs" />
+    <Compile Include="BasicButtonSimple.cs" />
+    <Compile Include="BasicCameraBackground.cs" />
+    <Compile Include="BasicCanvas.cs" />
+    <Compile Include="BasicConfirmDialog.cs" />
+    <Compile Include="BasicDropdown.cs" />
+    <Compile Include="BasicIconButton.cs" />
+    <Compile Include="BasicInfoDialog.cs" />
+    <Compile Include="BasicInputField.cs" />
+    <Compile Include="BasicModernPanel.cs" />
+    <Compile Include="BasicOverlayPanel.cs" />
+    <Compile Include="BasicPanel.cs" />
+    <Compile Include="BasicScrollbar.cs" />
+    <Compile Include="BasicScrollView.cs" />
+    <Compile Include="BasicSlider.cs" />
+    <Compile Include="BasicSubPanel.cs" />
+    <Compile Include="BasicText.cs" />
+    <Compile Include="BasicTextConfirmDialog.cs" />
+    <Compile Include="BasicTmpInputField.cs" />
+    <Compile Include="BasicTMPLink.cs" />
+    <Compile Include="BasicToggle.cs" />
+    <Compile Include="BasicUI\UISettings.cs" />
+    <Compile Include="Blade.cs" />
+    <Compile Include="BladeChild.cs" />
+    <Compile Include="BladeCollider.cs" />
+    <Compile Include="BladeColliderOLD.cs" />
+    <Compile Include="BladeDistanceItem.cs" />
+    <Compile Include="BladeDrawPointsJob.cs" />
+    <Compile Include="BladeOLD.cs" />
+    <Compile Include="BladePaintable.cs" />
+    <Compile Include="BladePainter.cs" />
+    <Compile Include="BladeSectionJobInfoItem.cs" />
+    <Compile Include="BladeSectionJobItem.cs" />
+    <Compile Include="BladeTriangle.cs" />
+    <Compile Include="BloodColourType.cs" />
+    <Compile Include="BluntDamageableBodypartValues.cs" />
+    <Compile Include="BluntDamageDealer.cs" />
+    <Compile Include="BluntDamageDealerCollider.cs" />
+    <Compile Include="BluntDamageDealerGameObject.cs" />
+    <Compile Include="BluntDamageEffect.cs" />
+    <Compile Include="BluntDamageHandPositions.cs" />
+    <Compile Include="BluntDamageHelpers.cs" />
+    <Compile Include="BluntDamageInstance.cs" />
+    <Compile Include="BluntDamageMultiplierForType.cs" />
+    <Compile Include="BluntDamageType.cs" />
+    <Compile Include="BluntDamageTypeValues.cs" />
+    <Compile Include="BluntHitHistory.cs" />
+    <Compile Include="Bodypart.cs" />
+    <Compile Include="BodyPartHealth.cs" />
+    <Compile Include="ButtonExtensions.cs" />
+    <Compile Include="ButtonIntOptionSelect.cs" />
+    <Compile Include="ButtonOption.cs" />
+    <Compile Include="ButtonOptionSelect.cs" />
+    <Compile Include="CalculateImpactForce.cs" />
+    <Compile Include="CalculateTimeToCollision.cs" />
+    <Compile Include="CameraFollowPlayers.cs" />
+    <Compile Include="CameraMode.cs" />
+    <Compile Include="CameraSettings.cs" />
+    <Compile Include="CameraSmoothFollow.cs" />
+    <Compile Include="CameraSmoothFollowControllable.cs" />
+    <Compile Include="ChangeMoveActionCommand.cs" />
+    <Compile Include="ChangeStanceEditor.cs" />
+    <Compile Include="ChangeTargetStanceForStanceChangeCommand.cs" />
+    <Compile Include="CharacterUpright.cs" />
+    <Compile Include="ChatMessageItem.cs" />
+    <Compile Include="ChatOption.cs" />
+    <Compile Include="CheckCutJob.cs" />
+    <Compile Include="CheckCutJobOutValues.cs" />
+    <Compile Include="ClearEquipmentCommand.cs" />
+    <Compile Include="ClientInputs.cs" />
+    <Compile Include="ColliderType.cs" />
+    <Compile Include="CollisionSound.cs" />
+    <Compile Include="CollisionSoundType.cs" />
+    <Compile Include="CommandInvoker.cs" />
+    <Compile Include="CommunityTextureButtonItem.cs" />
+    <Compile Include="CommunityTextureItem.cs" />
+    <Compile Include="CommunityTextureSelectDialog.cs" />
+    <Compile Include="ConfigurableJointExtensions.cs" />
+    <Compile Include="ConfigurableJointScript.cs" />
+    <Compile Include="ConnectionEndedType.cs" />
+    <Compile Include="ContinuousAttackAiObject.cs" />
+    <Compile Include="ConversionPlane.cs" />
+    <Compile Include="CustomAiObject.cs" />
+    <Compile Include="CustomLog.cs" />
+    <Compile Include="CustomTextureButtonItem.cs" />
+    <Compile Include="CustomTextureItem.cs" />
+    <Compile Include="CustomTextureType.cs" />
+    <Compile Include="CutColliderSectionRing.cs" />
+    <Compile Include="CutItem.cs" />
+    <Compile Include="CutJobItem.cs" />
+    <Compile Include="CutJobItemMesh.cs" />
+    <Compile Include="CutJoint.cs" />
+    <Compile Include="CutManager.cs" />
+    <Compile Include="CutObjectInfo.cs" />
+    <Compile Include="CuttableCollider.cs" />
+    <Compile Include="CuttableGameObject.cs" />
+    <Compile Include="CuttableJobSection.cs" />
+    <Compile Include="CuttableMesh.cs" />
+    <Compile Include="CuttableMeshJobItem.cs" />
+    <Compile Include="CuttableMultiplayerHandler.cs" />
+    <Compile Include="CuttableObject.cs" />
+    <Compile Include="CuttableSection.cs" />
+    <Compile Include="Cutter.cs" />
+    <Compile Include="Cyan\Blit.cs" />
+    <Compile Include="DamageablePart.cs" />
+    <Compile Include="DamageOrigin.cs" />
+    <Compile Include="DamagingMapPart.cs" />
+    <Compile Include="DamagingPart.cs" />
+    <Compile Include="DE.cs" />
+    <Compile Include="DefaultStanceChangeCommand.cs" />
+    <Compile Include="DeleteMoveCommand.cs" />
+    <Compile Include="DeleteStanceCommand.cs" />
+    <Compile Include="DemoFreeCameraControls.cs" />
+    <Compile Include="DifficultyObject.cs" />
+    <Compile Include="DisableableToggle.cs" />
+    <Compile Include="DisableForDemo.cs" />
+    <Compile Include="DisableIfCampaignBeaten.cs" />
+    <Compile Include="Dissonance\Integrations\MirrorIgnorance\DissonanceNetworkMessage.cs" />
+    <Compile Include="Dissonance\Integrations\MirrorIgnorance\DissonanceNetworkMessageExtensions.cs" />
+    <Compile Include="Dissonance\Integrations\MirrorIgnorance\MirrorConn.cs" />
+    <Compile Include="Dissonance\Integrations\MirrorIgnorance\MirrorIgnoranceClient.cs" />
+    <Compile Include="Dissonance\Integrations\MirrorIgnorance\MirrorIgnoranceCommsNetwork.cs" />
+    <Compile Include="Dissonance\Integrations\MirrorIgnorance\MirrorIgnorancePlayer.cs" />
+    <Compile Include="Dissonance\Integrations\MirrorIgnorance\MirrorIgnoranceServer.cs" />
+    <Compile Include="DoCutJob.cs" />
+    <Compile Include="DoCutJobOutValues.cs" />
+    <Compile Include="DontDestroyOnLoad.cs" />
+    <Compile Include="EditMode.cs" />
+    <Compile Include="EditorCamera.cs" />
+    <Compile Include="EditorMode.cs" />
+    <Compile Include="EnemyBlade.cs" />
+    <Compile Include="EnemyHealth.cs" />
+    <Compile Include="EnemyPreviewItem.cs" />
+    <Compile Include="EnemyPreviewSceneManager.cs" />
+    <Compile Include="EnumExtensions.cs" />
+    <Compile Include="EnvironmentSoundType.cs" />
+    <Compile Include="EnvironmentTypeSound.cs" />
+    <Compile Include="Equipment.cs" />
+    <Compile Include="EquipmentEditorManager.cs" />
+    <Compile Include="EquipmentPanel.cs" />
+    <Compile Include="EquipmentPositionButton.cs" />
+    <Compile Include="EquipmentSelectDialog.cs" />
+    <Compile Include="Es\InkPainter\Brush.cs" />
+    <Compile Include="Es\InkPainter\Effective\GrabArea.cs" />
+    <Compile Include="Es\InkPainter\Effective\HeightFluid.cs" />
+    <Compile Include="Es\InkPainter\Effective\ReverseUV.cs" />
+    <Compile Include="Es\InkPainter\Effective\TextureMorphing.cs" />
+    <Compile Include="Es\InkPainter\GameObjectExtension.cs" />
+    <Compile Include="Es\InkPainter\InkCanvas.cs" />
+    <Compile Include="Es\InkPainter\Math.cs" />
+    <Compile Include="Es\InkPainter\MeshOperator.cs" />
+    <Compile Include="Es\InkPainter\Sample\ClipPainter.cs" />
+    <Compile Include="Es\InkPainter\Sample\CollisionPainter.cs" />
+    <Compile Include="Es\InkPainter\Sample\CollisionReflectionPainter.cs" />
+    <Compile Include="Es\InkPainter\Sample\MousePainter.cs" />
+    <Compile Include="Es\InkPainter\Sample\ReflectPainter.cs" />
+    <Compile Include="Es\InkPainter\Sample\TextureRecovery.cs" />
+    <Compile Include="Es\InkPainter\Sample\WeaponCollisionPainter.cs" />
+    <Compile Include="Es\Utility\SceneViewCamera.cs" />
+    <Compile Include="EventSystemManager.cs" />
+    <Compile Include="ExistingCollision.cs" />
+    <Compile Include="FightItem.cs" />
+    <Compile Include="FightOpponent.cs" />
+    <Compile Include="FixedSizeQueue.cs" />
+    <Compile Include="FixedTimeAnalyzer.cs" />
+    <Compile Include="FizzyConnectionManager.cs" />
+    <Compile Include="FizzySocketManager.cs" />
+    <Compile Include="FollowTransforms.cs" />
+    <Compile Include="FriendlyPosition.cs" />
+    <Compile Include="FullCut.cs" />
+    <Compile Include="FullCutTester.cs" />
+    <Compile Include="GameEndResultType.cs" />
+    <Compile Include="GameMaster.cs" />
+    <Compile Include="GameMenu.cs" />
+    <Compile Include="GameOverSceenMenu.cs" />
+    <Compile Include="GamePlayer.cs" />
+    <Compile Include="GameSettingsManager.cs" />
+    <Compile Include="GameSettingsManagerMultiplayer.cs" />
+    <Compile Include="GameSettingsPanel.cs" />
+    <Compile Include="GameTypes.cs" />
+    <Compile Include="GeneralManager.cs" />
+    <Compile Include="GeneralSound.cs" />
+    <Compile Include="GeneralSoundType.cs" />
+    <Compile Include="GenerateActiveRigidbody.cs" />
+    <Compile Include="GenerateMesh.cs" />
+    <Compile Include="GeneratePlayerNetworkScripts.cs" />
+    <Compile Include="GladioMoriServerType.cs" />
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="Hand.cs" />
+    <Compile Include="Handle.cs" />
+    <Compile Include="HandMultiplayer.cs" />
+    <Compile Include="HandStateSelectPanel.cs" />
+    <Compile Include="HingeJointTarget.cs" />
+    <Compile Include="HistoryPositionItem.cs" />
+    <Compile Include="HistoryPositionTracker.cs" />
+    <Compile Include="HistoryVelocity.cs" />
+    <Compile Include="HudCanvas.cs" />
+    <Compile Include="IBlade.cs" />
+    <Compile Include="IBluntDamageDealer.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="IDialog.cs" />
+    <Compile Include="IDisableableGameSetting.cs" />
+    <Compile Include="IDisableableInputManager.cs" />
+    <Compile Include="IGameSettingsManager.cs" />
+    <Compile Include="IgnoreColliderPair.cs" />
+    <Compile Include="IgnoreCollision.cs" />
+    <Compile Include="IgnoreCollisionWithColliders.cs" />
+    <Compile Include="IGrabbable.cs" />
+    <Compile Include="IInputManager.cs" />
+    <Compile Include="IKJoint.cs" />
+    <Compile Include="ILegacy.cs" />
+    <Compile Include="ImageSelect.cs" />
+    <Compile Include="INavigationListOption.cs" />
+    <Compile Include="InputHolder.cs" />
+    <Compile Include="InputMoveScrollViewOnSelect.cs" />
+    <Compile Include="IPaintable.cs" />
+    <Compile Include="IPlayerInputManager.cs" />
+    <Compile Include="IRoomPlayer.cs" />
+    <Compile Include="IWeaponDamageable.cs" />
+    <Compile Include="JobHelpers.cs" />
+    <Compile Include="JobVector3.cs" />
+    <Compile Include="JointChainDirection.cs" />
+    <Compile Include="JointStrength.cs" />
+    <Compile Include="JointStrengthTool.cs" />
+    <Compile Include="JointStrengthToolItem.cs" />
+    <Compile Include="JointStrengthToolListItem.cs" />
+    <Compile Include="JumpHeightCalculator.cs" />
+    <Compile Include="KeybindOptionRow.cs" />
+    <Compile Include="KeybindOptionSingle.cs" />
+    <Compile Include="LargeBladeTrigger.cs" />
+    <Compile Include="LargeBladeTriggerChild.cs" />
+    <Compile Include="LightMapReMapper.cs" />
+    <Compile Include="LimitedRotationTest.cs" />
+    <Compile Include="LoadSceneOnClick.cs" />
+    <Compile Include="LobbyCodeSettingItem.cs" />
+    <Compile Include="LobbyDataKey.cs" />
+    <Compile Include="LobbyListItemPanel.cs" />
+    <Compile Include="LobbyListTitleItemPanel.cs" />
+    <Compile Include="LobbyListTitlePanel.cs" />
+    <Compile Include="LobbyLocalManager.cs" />
+    <Compile Include="LobbyLocalPlayer.cs" />
+    <Compile Include="LobbyPlayer.cs" />
+    <Compile Include="LobbyPrivacyType.cs" />
+    <Compile Include="LobbyStatus.cs" />
+    <Compile Include="LocalizationHelpers.cs" />
+    <Compile Include="LocalizedDescriptionAttribute.cs" />
+    <Compile Include="LogVectorDirection.cs" />
+    <Compile Include="LowResCamera.cs" />
+    <Compile Include="MainMenuManager.cs" />
+    <Compile Include="MapItem.cs" />
+    <Compile Include="MaxHeightCalculator.cs" />
+    <Compile Include="MeasureMaxWeaponDistance.cs" />
+    <Compile Include="MenuButtonManager.cs" />
+    <Compile Include="MenuInputActions.cs" />
+    <Compile Include="MenuInputActionsMoveEditor.cs" />
+    <Compile Include="MeshInfo.cs" />
+    <Compile Include="MeshSplitting\Examples\CameraLineSplitter.cs" />
+    <Compile Include="MeshSplitting\Examples\MobileLineSplitter.cs" />
+    <Compile Include="MeshSplitting\MeshTools\IMeshSplitter.cs" />
+    <Compile Include="MeshSplitting\MeshTools\MeshContainer.cs" />
+    <Compile Include="MeshSplitting\MeshTools\MeshSplitterConcave.cs" />
+    <Compile Include="MeshSplitting\MeshTools\MeshSplitterConvex.cs" />
+    <Compile Include="MeshSplitting\Splitables\ISplitable.cs" />
+    <Compile Include="MeshSplitting\Splitables\Splitable.cs" />
+    <Compile Include="MeshSplitting\Splitables\SplitableJointHelper.cs" />
+    <Compile Include="MeshSplitting\SplitterMath\PlaneMath.cs" />
+    <Compile Include="MeshSplitting\SplitterMath\SplitterHelper.cs" />
+    <Compile Include="MeshSplitting\Splitters\Splitter.cs" />
+    <Compile Include="MeshSplitting\Splitters\SplitterSingleCut.cs" />
+    <Compile Include="MeshVertex.cs" />
+    <Compile Include="Microsoft\CodeAnalysis\EmbeddedAttribute.cs" />
+    <Compile Include="MirrorAllCommand.cs" />
+    <Compile Include="MirrorMoveCommand.cs" />
+    <Compile Include="MirrorStanceCommand.cs" />
+    <Compile Include="Mirror\Examples\Pong\NetworkManagerTest.cs" />
+    <Compile Include="Mirror\Experimental\NetworkJoint.cs" />
+    <Compile Include="Mirror\Experimental\NetworkPlayerPart.cs" />
+    <Compile Include="Mirror\FizzySteam\BidirectionalDictionary.cs" />
+    <Compile Include="Mirror\FizzySteam\FizzyFacepunch.cs" />
+    <Compile Include="Mirror\FizzySteam\IClient.cs" />
+    <Compile Include="Mirror\FizzySteam\IServer.cs" />
+    <Compile Include="Mirror\FizzySteam\LegacyClient.cs" />
+    <Compile Include="Mirror\FizzySteam\LegacyCommon.cs" />
+    <Compile Include="Mirror\FizzySteam\LegacyServer.cs" />
+    <Compile Include="Mirror\FizzySteam\NextClient.cs" />
+    <Compile Include="Mirror\FizzySteam\NextServer.cs" />
+    <Compile Include="Mirror\GeneratedNetworkCode.cs" />
+    <Compile Include="Mirror\MultiplayerRoomPlayer.cs" />
+    <Compile Include="Mirror\NetworkMessagesSent.cs" />
+    <Compile Include="MoveClasses\ActionType.cs" />
+    <Compile Include="MoveClasses\BodySide.cs" />
+    <Compile Include="MoveClasses\CancellablePlayerAction.cs" />
+    <Compile Include="MoveClasses\DeathReason.cs" />
+    <Compile Include="MoveClasses\EquipmentPosition.cs" />
+    <Compile Include="MoveClasses\EquipmentPositionOnPlayer.cs" />
+    <Compile Include="MoveClasses\EquipmentStartHandleRotation.cs" />
+    <Compile Include="MoveClasses\EquipmentType.cs" />
+    <Compile Include="MoveClasses\EquipmentTypeItem.cs" />
+    <Compile Include="MoveClasses\EquippedEquipment.cs" />
+    <Compile Include="MoveClasses\FighterJoint.cs" />
+    <Compile Include="MoveClasses\HandState.cs" />
+    <Compile Include="MoveClasses\inputType.cs" />
+    <Compile Include="MoveClasses\JointMove.cs" />
+    <Compile Include="MoveClasses\JointType.cs" />
+    <Compile Include="MoveClasses\Move.cs" />
+    <Compile Include="MoveClasses\MoveClassHelpers.cs" />
+    <Compile Include="MoveClasses\MoveSet.cs" />
+    <Compile Include="MoveClasses\NullableVector3.cs" />
+    <Compile Include="MoveClasses\OrganType.cs" />
+    <Compile Include="MoveClasses\PlayerAction.cs" />
+    <Compile Include="MoveClasses\playerInputAxis.cs" />
+    <Compile Include="MoveClasses\playerInputKeys.cs" />
+    <Compile Include="MoveClasses\RunningJointAnimations.cs" />
+    <Compile Include="MoveClasses\RunningMove.cs" />
+    <Compile Include="MoveClasses\RunningSingleMove.cs" />
+    <Compile Include="MoveClasses\Stance.cs" />
+    <Compile Include="MoveClasses\stanceChangeType.cs" />
+    <Compile Include="MoveDot.cs" />
+    <Compile Include="MoveDurationChangeCommand.cs" />
+    <Compile Include="MoveEditor.cs" />
+    <Compile Include="MoveEditorCamera.cs" />
+    <Compile Include="MoveEditorHelpManager.cs" />
+    <Compile Include="MoveInputTypeChangeCommand.cs" />
+    <Compile Include="MoveKeyframesCommand.cs" />
+    <Compile Include="MoveLayerChangeCommand.cs" />
+    <Compile Include="MoveNameChangeCommand.cs" />
+    <Compile Include="MovePainterTest.cs" />
+    <Compile Include="MoveSetEditor.cs" />
+    <Compile Include="MoveSetGameTypeChangeCommand.cs" />
+    <Compile Include="MoveSetNameChangeCommand.cs" />
+    <Compile Include="MoveSetSelector.cs" />
+    <Compile Include="MoveSetStaminaChangeCommand.cs" />
+    <Compile Include="MoveStanceChangeTypeChangeCommand.cs" />
+    <Compile Include="MultiplayerChat.cs" />
+    <Compile Include="MultiplayerChatMessage.cs" />
+    <Compile Include="MultiplayerGameMaster.cs" />
+    <Compile Include="MultiplayerLobbyItem.cs" />
+    <Compile Include="MultiplayerLobbyStatusManager.cs" />
+    <Compile Include="MultiplayerMenuManager.cs" />
+    <Compile Include="MultiplayerPlayerSetup.cs" />
+    <Compile Include="MultiplayerRigidbody.cs" />
+    <Compile Include="MultiplayerRoomManager.cs" />
+    <Compile Include="MultiplayerTransform.cs" />
+    <Compile Include="MultiselectItem.cs" />
+    <Compile Include="MusicManager.cs" />
+    <Compile Include="NavigationManager.cs" />
+    <Compile Include="NetworkRoomPlayerTest.cs" />
+    <Compile Include="NetworkTransformSettings.cs" />
+    <Compile Include="NextCommon.cs" />
+    <Compile Include="NormalRenderPassFeature.cs" />
+    <Compile Include="NullableJobVector3.cs" />
+    <Compile Include="ObjectAvoidanceResult.cs" />
+    <Compile Include="OneShotAudio.cs" />
+    <Compile Include="OpenLinkButton.cs" />
+    <Compile Include="OpenTextDialogSettingItem.cs" />
+    <Compile Include="OppositeGravity.cs" />
+    <Compile Include="OrganTypeSound.cs" />
+    <Compile Include="Paintable.cs" />
+    <Compile Include="PaintableChild.cs" />
+    <Compile Include="PaintEditorColorPicker.cs" />
+    <Compile Include="PaintEditorHideTool.cs" />
+    <Compile Include="PaintEditorItem.cs" />
+    <Compile Include="PaintEditorManager.cs" />
+    <Compile Include="PaintManager.cs" />
+    <Compile Include="PaintToolBrush.cs" />
+    <Compile Include="PaintToolDecal.cs" />
+    <Compile Include="PaintToolItem.cs" />
+    <Compile Include="ParticleDisplayer.cs" />
+    <Compile Include="ParticleSpawner.cs" />
+    <Compile Include="PenetratingObject.cs" />
+    <Compile Include="PersistentSave.cs" />
+    <Compile Include="PhysicsMaterialLegacyItem.cs" />
+    <Compile Include="PhysicsTest\MagmarStaminaManager.cs" />
+    <Compile Include="PlayerAnimator.cs" />
+    <Compile Include="PlayerAnimatorOLD.cs" />
+    <Compile Include="PlayerCameraEffects.cs" />
+    <Compile Include="PlayerCanvasController.cs" />
+    <Compile Include="PlayerConfig.cs" />
+    <Compile Include="PlayerGameStateInfo.cs" />
+    <Compile Include="PlayerHealth.cs" />
+    <Compile Include="PlayerHealthMultiplayer.cs" />
+    <Compile Include="PlayerHelpers\PlayerJointHelpers.cs" />
+    <Compile Include="PlayerInputAIManager.cs" />
+    <Compile Include="PlayerInputAiManagerContinuousAttack.cs" />
+    <Compile Include="PlayerInputManager.cs" />
+    <Compile Include="PlayerLobbyStatusPanel.cs" />
+    <Compile Include="PlayerMultiplayerInputManager.cs" />
+    <Compile Include="PlayerOptionsManager.cs" />
+    <Compile Include="PlayerRowPanel.cs" />
+    <Compile Include="PlayersManager.cs" />
+    <Compile Include="PlayerTurnType.cs" />
+    <Compile Include="PlayMove.cs" />
+    <Compile Include="PostProcessingManager.cs" />
+    <Compile Include="PostProcessingManagerAdditional.cs" />
+    <Compile Include="PrefabPool.cs" />
+    <Compile Include="PrefabPoolObject.cs" />
+    <Compile Include="PreviewImageCharacter.cs" />
+    <Compile Include="PreviewImageGenerationManager.cs" />
+    <Compile Include="PreviewImageGenerationMode.cs" />
+    <Compile Include="PreviewImageItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuitOnClick.cs" />
+    <Compile Include="RBH.cs" />
+    <Compile Include="RCGO.cs" />
+    <Compile Include="RDP.cs" />
+    <Compile Include="RecordableEventType.cs" />
+    <Compile Include="Recording.cs" />
+    <Compile Include="RecordingListItem.cs" />
+    <Compile Include="ReplayCameraControls.cs" />
+    <Compile Include="ReplayCutActivationItem.cs" />
+    <Compile Include="ReplayFreeCamera.cs" />
+    <Compile Include="ReplayListItem.cs" />
+    <Compile Include="ReplayListManager.cs" />
+    <Compile Include="ReplayManager.cs" />
+    <Compile Include="ReplayMode.cs" />
+    <Compile Include="ReplayTexturesOverrideType.cs" />
+    <Compile Include="ReplayTimeSlider.cs" />
+    <Compile Include="ReplayToolsManager.cs" />
+    <Compile Include="ResolutionOption.cs" />
+    <Compile Include="RFC.cs" />
+    <Compile Include="RGO.cs" />
+    <Compile Include="RigHint.cs" />
+    <Compile Include="RigManager.cs" />
+    <Compile Include="RotatePlayer.cs" />
+    <Compile Include="RotationalLabel.cs" />
+    <Compile Include="RS.cs" />
+    <Compile Include="RT.cs" />
+    <Compile Include="SceneManagerWithParameters.cs" />
+    <Compile Include="ScrollRectNoDrag.cs" />
+    <Compile Include="SelectedJoint.cs" />
+    <Compile Include="SelectedRigTarget.cs" />
+    <Compile Include="SelectOnInput.cs" />
+    <Compile Include="ServerType.cs" />
+    <Compile Include="SetEquipmentCommand.cs" />
+    <Compile Include="SetKeyframeHandStateCommand.cs" />
+    <Compile Include="SetKeyframesCommand.cs" />
+    <Compile Include="SetVelocity.cs" />
+    <Compile Include="SideToolButtons.cs" />
+    <Compile Include="SideToolPair.cs" />
+    <Compile Include="SimpleLookAtRig.cs" />
+    <Compile Include="SimplePaintTest.cs" />
+    <Compile Include="SimplePositionAndRotationRig.cs" />
+    <Compile Include="SimpleRelativePositionRig.cs" />
+    <Compile Include="SimpleRig.cs" />
+    <Compile Include="SimpleThreePointIKRig.cs" />
+    <Compile Include="SimpleTwoPointIKRig.cs" />
+    <Compile Include="SingleMoveEditor.cs" />
+    <Compile Include="SingleMoveEditorListItem.cs" />
+    <Compile Include="SingleplayerDifficultyItem.cs" />
+    <Compile Include="SinglePlayerDifficultyType.cs" />
+    <Compile Include="SingleplayerGameSettingsManager.cs" />
+    <Compile Include="SingleplayerHudCanvas.cs" />
+    <Compile Include="SingleplayerManager.cs" />
+    <Compile Include="SingleplayerRun.cs" />
+    <Compile Include="Singleton.cs" />
+    <Compile Include="SliderAndTextSelect.cs" />
+    <Compile Include="SongSound.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="SoundManagerMultiplayer.cs" />
+    <Compile Include="SoundMaterial.cs" />
+    <Compile Include="SoundMaterialType.cs" />
+    <Compile Include="SplitScreenCanvas.cs" />
+    <Compile Include="StaminaHudCanvas.cs" />
+    <Compile Include="StaminaItem.cs" />
+    <Compile Include="StaminaJob.cs" />
+    <Compile Include="StaminaJobItem.cs" />
+    <Compile Include="StaminaManager.cs" />
+    <Compile Include="StanceEditor.cs" />
+    <Compile Include="StanceNameChangeCommand.cs" />
+    <Compile Include="StatusBar.cs" />
+    <Compile Include="SteamManager.cs" />
+    <Compile Include="Stinger.cs" />
+    <Compile Include="StringFilterJob.cs" />
+    <Compile Include="SubMesh.cs" />
+    <Compile Include="System\Runtime\CompilerServices\NullableAttribute.cs" />
+    <Compile Include="TableColumnSortType.cs" />
+    <Compile Include="TempMultiplayerPlayerValues.cs" />
+    <Compile Include="TestControls.cs" />
+    <Compile Include="TestControlsPlayer.cs" />
+    <Compile Include="TestIfObjectWasCut.cs" />
+    <Compile Include="TestIgnoreCollision.cs" />
+    <Compile Include="TestIgnoreCollisionsBetweenObjects.cs" />
+    <Compile Include="TestIgnoreCollisionsBetweenObjectsGroup.cs" />
+    <Compile Include="TestModPlayer.cs" />
+    <Compile Include="TestStaminaRotations.cs" />
+    <Compile Include="TestUserManager.cs" />
+    <Compile Include="TextOptionSelect.cs" />
+    <Compile Include="TextureHelpers.cs" />
+    <Compile Include="TextureSelectCanvas.cs" />
+    <Compile Include="TickMode.cs" />
+    <Compile Include="ToggleOptionSelect.cs" />
+    <Compile Include="TooltipItem.cs" />
+    <Compile Include="TooltipManager.cs" />
+    <Compile Include="TransparentPlayer.cs" />
+    <Compile Include="TriTriIntersectionHelpers\IntersectionInfo.cs" />
+    <Compile Include="TriTriIntersectionHelpers\TriTriIntersection.cs" />
+    <Compile Include="TutorialManager.cs" />
+    <Compile Include="TutorialTask.cs" />
+    <Compile Include="TutorialTaskGroup.cs" />
+    <Compile Include="TutorialTaskRow.cs" />
+    <Compile Include="TutorialTaskType.cs" />
+    <Compile Include="TwoHandPositionRig.cs" />
+    <Compile Include="UnityEngine\UI\OptionDataWithValue.cs" />
+    <Compile Include="UnityUIExtensionMethods\MyExtensions.cs" />
+    <Compile Include="UserControls.cs" />
+    <Compile Include="Utils\BanHelpers.cs" />
+    <Compile Include="Utils\BanItem.cs" />
+    <Compile Include="Utils\BanList.cs" />
+    <Compile Include="Utils\ButtonState.cs" />
+    <Compile Include="Utils\CustomInputActionBind.cs" />
+    <Compile Include="Utils\CustomInputs.cs" />
+    <Compile Include="Utils\CustomKeyBind.cs" />
+    <Compile Include="Utils\DefaultMovesetSettings.cs" />
+    <Compile Include="Utils\EquipmentButtonItem.cs" />
+    <Compile Include="Utils\FontType.cs" />
+    <Compile Include="Utils\GameSettingsHelper.cs" />
+    <Compile Include="Utils\Generic.cs" />
+    <Compile Include="Utils\MoveSetHelpers.cs" />
+    <Compile Include="Utils\NetworkByteMessage.cs" />
+    <Compile Include="Utils\NetworkHelpers.cs" />
+    <Compile Include="Utils\NetworkJsonMessage.cs" />
+    <Compile Include="Utils\PaintableItemSideType.cs" />
+    <Compile Include="Utils\PaintHelpers.cs" />
+    <Compile Include="Utils\PaintToolType.cs" />
+    <Compile Include="Utils\PlayerAudioSettings.cs" />
+    <Compile Include="Utils\PlayerCameraSettings.cs" />
+    <Compile Include="Utils\PlayerGenericSettings.cs" />
+    <Compile Include="Utils\PlayerMultiplayerSettings.cs" />
+    <Compile Include="Utils\PlayerSettings.cs" />
+    <Compile Include="Utils\RecompiledByteMessage.cs" />
+    <Compile Include="Utils\RecompiledJsonMessage.cs" />
+    <Compile Include="Utils\RecordingHelper.cs" />
+    <Compile Include="Utils\SettingsHelper.cs" />
+    <Compile Include="Utils\TutorialSettings.cs" />
+    <Compile Include="Utils\UIHelpers.cs" />
+    <Compile Include="Utils\ValidationHelpers.cs" />
+    <Compile Include="VectorValueInput.cs" />
+    <Compile Include="VertexPairForCap.cs" />
+    <Compile Include="VoiceChatManager.cs" />
+    <Compile Include="VoiceChatPlayer.cs" />
+    <Compile Include="VoiceChatPlayerPanel.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponDamageableArteryCut.cs" />
+    <Compile Include="WeaponDamageableBodyPart.cs" />
+    <Compile Include="WeaponDamageablePart.cs" />
+    <Compile Include="WeaponDamageablePartMultiplayer.cs" />
+    <Compile Include="WeaponDamageablePartMultiplayerHandler.cs" />
+    <Compile Include="WeaponEdgeSection.cs" />
+    <Compile Include="WeaponSection.cs" />
+    <Compile Include="WinScreenInfo.cs" />
+    <Compile Include="WinScreenPlayerInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
